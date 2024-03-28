@@ -1,0 +1,15 @@
+.medium {
+    font: var(--font-m);
+}
+
+.large {
+    font: var(--font-l);
+}
+
+.blue {
+    color: var(--font-blue-light);
+}
+
+.dark {
+    color: var(--font-title-light);
+}

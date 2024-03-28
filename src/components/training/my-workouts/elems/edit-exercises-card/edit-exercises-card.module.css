@@ -1,0 +1,40 @@
+.editCard {
+    position: absolute;
+    width: 240px;
+    z-index: 1049;
+
+    &>div {
+        padding: 0;
+    }
+}
+
+.cardTitle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: var(--gap-m) var(--gap-s) var(--gap-s);
+
+    & :global(.ant-select-selection-item.ant-select-selection-item) {
+        text-align: start;
+    }
+}
+
+.cardBody {
+    padding: var(--gap-m) var(--gap-s);
+    height: 125px;
+}
+
+:global(.ant-card-actions) {
+    padding: 0 var(--gap-m);
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 460px) {
+    .editCard {
+        width: 312px;
+    }
+}

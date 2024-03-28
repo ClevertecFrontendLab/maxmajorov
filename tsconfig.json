@@ -2,7 +2,7 @@
     "compilerOptions": {
         "target": "ES2020",
         "useDefineForClassFields": true,
-        "lib": ["ES2020", "DOM", "DOM.Iterable"],
+        "lib": ["ESNext.Array", "ES2020", "DOM", "DOM.Iterable"],
         "module": "ESNext",
         "skipLibCheck": true,
         "moduleResolution": "bundler",
@@ -19,13 +19,20 @@
         "baseUrl": ".",
         "paths": {
             "@public/*": ["./public/*"],
+            "@app/*": ["./src/app/*"],
             "@components/*": ["./src/components/*"],
             "@constants/*": ["./src/constants/*"],
             "@hooks/*": ["./src/hooks/*"],
             "@pages/*": ["./src/pages/*"],
             "@redux/*": ["./src/redux/*"],
-            "@types/*": ["./src/types/*"],
-            "@utils/*": ["./src/utils/*"]
+            "@common-types/*": ["./src/common-types/*"],
+            "@routes/*": ["./src/routes/*"],
+            "@utils/*": ["./src/utils/*"],
+            "@config/*": ["./src/config/*"],
+            "@styles/*": ["./src/styles/*"],
+            "@widgets/*": ["./src/widgets/*"],
+            "@shared/*": ["./src/shared/*"],
+            "@theme/*": ["./src/theme/*"]
         },
         "plugins": [
             {
@@ -38,6 +45,6 @@
             }
         ]
     },
-    "include": ["src"],
+    "include": ["src", "cypress"],
     "references": [{ "path": "./tsconfig.node.json" }]
 }

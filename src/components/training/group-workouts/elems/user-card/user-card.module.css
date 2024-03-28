@@ -1,0 +1,57 @@
+.userCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 254px;
+    padding: var(--gap-m);
+
+    &>div {
+        padding: 0;
+    }
+}
+
+.blueBackground {
+    height: 194px;
+    background-color: #F0F5FF;
+}
+
+.grayBackground {
+    height: 194px;
+    background-color: #FAFAFA;
+}
+
+.userInfo {
+    align-items: center;
+    font: var(--font-s);
+    color: var(--font-title-light);
+}
+
+.indicators {
+    margin-top: var(--gap-xs);
+    font: var(--font-xs);
+}
+
+.trainingInfo {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--primary-light)
+}
+
+.status {
+    text-align: center;
+    margin-top: var(--gap-s);
+
+    &>span {
+        margin-left: var(--gap-xs);
+    }
+}
+
+@media (max-width: 575px) {
+    .title {
+        align-items: center;
+    }
+
+    .userCard {
+        width: 312px;
+    }
+}

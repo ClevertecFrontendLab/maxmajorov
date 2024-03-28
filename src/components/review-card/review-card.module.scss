@@ -1,0 +1,58 @@
+.reviewCard {
+    display: flex;
+    gap: 12px;
+
+    @media (width <= 768px) {
+        flex-direction: column;
+    }
+}
+
+.profileInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    min-width: 174px;
+
+    @media (width <= 768px) {
+        flex-direction: row;
+    }
+}
+
+.profileName,
+.profileSurName {
+    color: var(--Character_light-Title-85, #262626);
+    font: var(--font-m);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.descriptionBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 1110px;
+}
+
+.description {
+    color: var(--Character_light-Secondary-45, #8c8c8c);
+    font: var(--font-s);
+}
+
+.ratingDate {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    height: 16px;
+}
+
+.date {
+    color: var(--Neutral-gray-6, #bfbfbf);
+    font: var(--font-xs);
+}
+
+.rate svg {
+    height: 16px;
+    width: 16px;
+}

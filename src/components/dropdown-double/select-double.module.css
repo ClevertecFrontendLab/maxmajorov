@@ -1,0 +1,10 @@
+.dropdownDouble {
+    width: 100%;
+
+& > .ant-select-selector {
+      border: none;
+      background-color: #FF4D4F;
+      font-size: 400px;
+  }
+}
+

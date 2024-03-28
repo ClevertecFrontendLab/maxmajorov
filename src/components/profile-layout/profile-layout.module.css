@@ -1,0 +1,28 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    min-height: var(--app-min-height);
+    background: url(@public/blure.png) left bottom/cover no-repeat;
+    background-attachment: fixed;
+}
+
+.blurWrapper {
+    filter: blur(10px);
+}
+
+.loginWrapper {
+    max-width: 539px;
+    max-height: 742px;
+    padding: var(--gap-8xl) var(--gap-4xl);
+    background-color: var(--neutral-1);
+}
+
+@media (max-width: 490px) {
+    .loginWrapper {
+        max-width: 328px;
+        max-height: 612px;
+        padding: var(--gap-4xl) var(--gap-m);
+    }
+}

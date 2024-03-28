@@ -1,0 +1,46 @@
+.root {
+    position: relative;
+    padding: var(--gap-xl);
+    height: 100%;
+    background-color: var(--neutral-1);
+    border-radius: var(--border-radius-m);
+}
+
+:global(.ant-tabs-nav-list) { 
+    width: 100%;
+    justify-content: space-between;
+}
+
+:global(.ant-tabs-tab-btn) {
+    font: var(--font-xl-tablet)
+}
+
+.badge {
+    margin-left: var(--gap-s);
+}
+
+.marathonTab {
+    background-image: url('/public/marathon-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.alert {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+}
+
+@media (max-width: 834px) {
+    :global(.ant-tabs-tab-btn) {
+        font: var(--font-s)
+    }
+}
+
+@media (max-width: 576px) {
+    .root {
+        margin: var(--gap-xl-neg);
+    }
+}

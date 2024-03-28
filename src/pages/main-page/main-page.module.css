@@ -1,0 +1,44 @@
+.cardBlock {
+    max-width: 752px;
+}
+
+.descriptionList {
+    margin: 0;
+    list-style-type: none;
+}
+
+.actionCardsBlocks {
+    display: flex;
+    gap: var(--gap-m);
+    justify-content: space-between;
+    width: 100%;
+    background-color: transparent;
+}
+
+.cardButton {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-xs);
+    font: var(--font-s);
+    color: var(--primary-light);
+}
+
+.margin24px {
+    margin-bottom: var(--gap-xl);
+}
+
+.margin16px {
+    margin-bottom: var(--gap-m);
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+@media (max-width: 834px) {
+    .actionCardsBlocks {
+        gap: var(--gap-xs);
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}

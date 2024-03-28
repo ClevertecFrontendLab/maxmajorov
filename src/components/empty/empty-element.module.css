@@ -1,0 +1,10 @@
+.empty {
+    height: var(--gap-4xl);
+    width: var(--gap-4xl);
+    margin: var(--gap-m) auto;
+
+    & > svg {
+        width: var(--gap-4xl);
+        height: var(--gap-4xl);
+    }
+}

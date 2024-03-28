@@ -395,7 +395,7 @@ const inviteJointTraining = [
     },
 ];
 
-function returnUpdateUserTraining(id, date, isImplementation: boolean) {
+function returnUpdateUserTraining(id: string, date: number, isImplementation: boolean) {
     return {
         isImplementation,
         id,
@@ -475,7 +475,7 @@ const newUserTraining2 = {
     ],
 };
 
-function getFormatDate(date, isStandardFormat) {
+function getFormatDate(date: number, isStandardFormat: boolean) {
     const formattedDate = new Date(date);
     const year = formattedDate.getFullYear();
     const month = String(formattedDate.getMonth() + 1).padStart(2, '0');
@@ -499,11 +499,11 @@ describe('Sprint 6', () => {
             { width: 833, height: 900 },
             { width: 1440, height: 900 },
         ];
-        const resolutionMobile = [{ width: 360, height: 740 }];
+        // const resolutionMobile = [{ width: 360, height: 740 }];
         const resolutionTablet = [{ width: 833, height: 900 }];
         const resolutionLaptop = [{ width: 1440, height: 900 }];
 
-        function takeScreenshots(screenshotName, resolution = resolutionFull) {
+        function takeScreenshots(screenshotName: string, resolution = resolutionFull) {
             cy.wait(1000);
             for (let i = 0; i < resolution.length; i++) {
                 cy.viewport(resolution[i].width, resolution[i].height);
@@ -742,8 +742,11 @@ describe('Sprint 6', () => {
             cy.get(`[data-test-id=${DATA_TEST_ID.menuButtonTraining}]`).click();
             cy.url().should('include', '/training');
             takeScreenshots('get-training-list-error', resolutionLaptop);
+            cy.wait(1000)
             cy.get(`[data-test-id=${DATA_TEST_ID.modalErrorUserTrainingButton}]`).click();
+            cy.wait(1000)
             cy.get(`[data-test-id=${DATA_TEST_ID.modalErrorUserTrainingButtonClose}]`).click();
+            cy.wait(1000)
             cy.url().should('include', '/training');
             takeScreenshots('empty-calendar-page', resolutionLaptop);
             cy.intercept('GET', 'catalogs/training-list', {
@@ -933,6 +936,7 @@ describe('Sprint 6', () => {
             });
         });
         it('accept an invitation from a friend to train together', () => {
+            cy.reload();
             cy.intercept('GET', 'catalogs/training-list', {
                 body: trainingList,
                 statusCode: 200,
@@ -962,6 +966,22 @@ describe('Sprint 6', () => {
                     },
                 });
             }).as('putInvite');
+
+            cy.visit('/');
+            cy.intercept('POST', 'auth/login', { accessToken: 'SUPERUSER' }).as('login');
+            cy.visit('/auth');
+            cy.get('[data-test-id=login-email]').type('valadzkoaliaksei@tut.by');
+            cy.get('[data-test-id=login-password]').type('1234qqQQ');
+            cy.get('[data-test-id=login-submit-button]').click();
+            cy.url().should('include', '/main');
+            cy.intercept('GET', 'user/me', {
+                statusCode: 200,
+                body: {
+                    email: 'valadzkoaliaksei@tut.by',
+                    readyForJointTraining: false,
+                    sendNotification: false,
+                },
+            }).as('getUser');
 
             cy.url().should('include', '/main');
             cy.get(`[data-test-id=${DATA_TEST_ID.notificationAboutJointTraining}]`).should('exist');

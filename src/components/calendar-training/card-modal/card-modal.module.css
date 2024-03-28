@@ -1,0 +1,65 @@
+.cardModalWrapper {
+    min-width: 264px;
+    min-height: 200px;
+    position: absolute;
+    animation: fade-in 0.3s ease-in;
+    z-index: 150;
+}
+
+.titleDate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &>* * {
+        color: var(--secondary-light);
+    }
+}
+
+.buttonWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--gap-xs) var(--gap-s);
+    background-color: var(--color-border-gray);
+    border-radius: 0 0 var(--border-radius-m) var(--border-radius-m);
+    margin-top: var(--gap-xl);
+}
+
+
+.cardModalLeft {
+    left: 0;
+}
+
+.cardModalRight {
+    right: 0;
+}
+
+.cardModalMobile {
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+@media (max-width: 480px) {
+    .cardModalWrapper {
+        min-width: 312px;
+    }
+}
+
+.saveButton {
+    position: fixed;
+    width: 330px;
+    bottom: var(--gap-xl);
+
+    @media (max-width: 480px) {
+        width: 90%;
+    }
+}
+
+.alert {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+}

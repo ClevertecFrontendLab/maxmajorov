@@ -1,0 +1,25 @@
+.modal :global(.ant-modal-body) {
+    padding: 0;
+}
+
+.notification {
+    min-width: 328px;
+    bottom: -50vh;
+    left: -50%;
+    transform: translate(50%, -50%);
+}
+
+.iconWarning {
+    > * {
+        fill: var(--primary-light);
+    }
+}
+.iconError {
+    > * {
+        fill: var(--color-light-error);
+    }
+}
+
+.subtitle:global(.ant-typography.ant-typography-secondary) {
+  color: var(--font-title-light);
+}

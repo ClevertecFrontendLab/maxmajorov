@@ -1,0 +1,48 @@
+.confirmEmailPage {
+    max-width: 475px;
+}
+.descriptionContainer {
+    text-align: center;
+}
+
+.title {
+    color: var(--font-title-light);
+    font: var(--font-xl-tablet);
+}
+
+.description {
+    font: var(--font-s);
+    color: var(--secondary-light);
+    text-align: center;
+    line-height: 1.5;
+}
+
+.email {
+    font-weight: var(--font-weight-xl);
+}
+
+.verificationContainer {
+    max-height: 40px;
+    gap: var(--gap-s);
+}
+
+.character {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: var(--font-s);
+    color: var(--font-title-light);
+    background: var(--neutral-1);
+    border-radius: var(--border-radius-xs);
+    border: 1px solid var(--neutral-5);
+
+}
+.errorCharacter {
+    border: 2px solid var(--color-light-error);
+}
+
+@media (max-width: 490px) {
+    .verificationContainer {
+        gap: var(--gap-xs);
+    }
+}

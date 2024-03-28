@@ -1,0 +1,9 @@
+export { ValidateFormSubmit } from './validation-form-submit/validation-form-submit';
+export { ValidationFormRepeatPassword } from './validation-form-repeat-password/validation-form-repeat-password';
+export { ValidationFormPassword } from './validation-form-password/validation-form-password';
+export { ValidationFormEmail } from './validation-form-email/validation-form-email';
+export { ValidationFormAvatar } from './validation-form-avatar/validation-form-avatar';
+export { ValidationFormSurname } from './validation-form-surname/validation-form-name';
+export { ValidationFormName } from './validation-form-name/validation-form-name';
+export { ValidationFormBirthday } from './validation-form-birthday/validation-form-birthday';
+export { ValidationForm } from './validation-form';

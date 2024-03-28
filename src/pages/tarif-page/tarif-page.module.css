@@ -1,0 +1,30 @@
+.back {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xl);
+}
+
+.testimonials {
+  padding-top: var(--gap-9xl);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-xs);
+}
+
+.testimonials button:global(.ant-btn) {
+  padding: var(--gap-l);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 360px) {
+  .testimonials {
+    flex-direction: column;
+    padding-top: var(--gap-l);
+  }
+
+  .testimonials button {
+    width: 100%;
+  }
+}

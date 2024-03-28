@@ -1,0 +1,32 @@
+.reviewWrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: scroll;
+}
+
+.reviewBlock::-webkit-scrollbar {
+    display: none;
+}
+
+.buttonBlock {
+    display: flex;
+    gap: 8px;
+    margin-top: 112px;
+}
+
+.buttonOpen {
+    height: 40px;
+}
+
+@media (width <= 768px) {
+    .buttonBlock {
+        flex-direction: column;
+        gap: 16px;
+    }       
+}

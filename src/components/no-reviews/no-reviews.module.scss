@@ -1,0 +1,43 @@
+.noReviewCardWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: unset;
+    gap: 20px;
+    min-height: calc(var(--app-min-height) - 120px);
+}
+
+.noReviewCard {
+    width: 100%;
+    height: 284px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.noReviewCardDescription {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    color: var(--primary_light-9, #061178);
+    font: var(--font-xl-tablet);
+}
+
+.subTitle {
+    color: var(--Character_light-Secondary-45, #8c8c8c);
+    font: var(--font-s);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 48px;
+}
+
+.buttonOpen {
+    height: 40px;
+}
