@@ -1,0 +1,28 @@
+.wrapper, .wrapper-no-edit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--gap-s);
+}
+
+.wrapper:hover {
+    background-color: var(--color-negative);
+}
+
+.wrapperNoEdit {
+    height: 18px;
+}
+
+
+
+.badge {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.button {
+    height: var(--gap-2xl);
+    padding: 0
+}

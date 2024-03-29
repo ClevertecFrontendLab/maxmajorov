@@ -1,0 +1,21 @@
+.drawer :global(.ant-drawer-content-wrapper.ant-drawer-content-wrapper) {
+    width: 360px;
+
+    @media (max-width: 480px) {
+        width: 100%;
+        border-radius: 18px;
+        margin: auto;
+    }
+}
+
+:global(.ant-drawer-content) {
+    @media (max-width: 480px) {
+        border-top-right-radius: var(--border-radius-xxl);
+        border-top-left-radius: var(--border-radius-xxl);
+    }
+}
+
+:global(.ant-drawer-header button.ant-drawer-close) {
+    position: relative;
+    left: 0;
+}

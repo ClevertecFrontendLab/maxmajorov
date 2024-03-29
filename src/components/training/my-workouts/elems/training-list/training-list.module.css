@@ -1,0 +1,30 @@
+.trainingList {
+    width: 50%;
+
+    @media (max-width: 875px) {
+        width: 100%;
+    }
+
+    @media (max-width: 360px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 75vh;
+        font-size: 12px;
+        width: 100%;
+    }
+}
+
+:global(.ant-table-thead > tr > th) {
+    font: var(--font-xs);
+}
+
+.addButton {
+    margin-top: var(--gap-9xl);
+
+    @media (max-width: 479px) {
+        button {
+            width: 100%;
+        }
+    }
+}

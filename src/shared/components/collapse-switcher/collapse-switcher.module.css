@@ -1,0 +1,38 @@
+.collapseSwitcher {
+    position: absolute;
+    background-color: var(--neutral-1);
+    box-shadow: 5px 2px 8px -5px rgba(0, 0, 0, 0.15);
+    border: none;
+    outline: none;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.mobileSwitcher {
+    width: 295px;
+    height: 39px;
+    transform: perspective(750px) rotateY(84deg);
+}
+
+.desktopSwitcher {
+    width: 187px;
+    height: 56px;
+    transform: perspective(600px) rotateY(84deg);
+}
+
+.switcherIcon {
+    position: absolute;
+    padding-left: 15px;
+}
+
+.mobileIcon {
+    top: 12px;
+    left: 36px;
+    transform: perspective(750px) rotateY(-84deg);
+}
+
+.desktopIcon {
+    top: 20px;
+    left: -11px;
+    transform: perspective(600px) rotateY(-84deg);
+}

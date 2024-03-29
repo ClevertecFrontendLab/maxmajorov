@@ -1,0 +1,44 @@
+.searhing {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--gap-xl);
+}
+
+.jointList {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: var(--gap-xl);
+    gap: var(--gap-m);
+}
+
+.searhInput {
+    width: 480px;
+}
+
+.backButton {
+    position: absolute;
+    left: 0;
+}
+
+:global(.ant-list-items) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: var(--gap-xl);
+    gap: var(--gap-m);
+}
+
+:global(.ant-list-pagination) {
+    text-align: left;
+}
+
+@media (max-width: 835px) {
+    :global(.ant-list-items) {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .searhInput {
+        margin-top: var(--gap-4xl);
+    }
+}

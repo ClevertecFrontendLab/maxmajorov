@@ -1,0 +1,36 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    padding: var(--gap-xl);
+    border: 1px solid var(--color-border-gray);
+    background-color: var(--color-background-gray-light);
+    text-align: center;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: space-around;
+}
+
+:global(.ant-btn):hover {
+    color: var(--primary-light)
+}
+
+@media (max-width: 835px) {
+    .buttonGroup {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 575px) {
+    .description {
+        padding:  var(--gap-m) var(--gap-4xs);
+    }
+
+    .buttonGroup {
+        align-items: center;
+    }
+}

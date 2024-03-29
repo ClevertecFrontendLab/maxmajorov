@@ -1,0 +1,84 @@
+.appHeader {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-m);
+    padding: var(--gap-m) var(--gap-xl);
+    height: unset;
+    color: var(--font-title-light);
+    background-color: var(--header-blue-light);
+}
+
+.menuNoMain {
+    min-height: var(--app-review-page);
+}
+
+.location {
+    font: var(--font-s);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap-m);
+}
+
+.settings {
+    font: var(--font-s);
+}
+
+.cardButton {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-2s);
+    font: var(--font-s);
+    color: var(--font-title-light);
+}
+
+.settingsMobileButton {
+    display: none;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tarif {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-m);
+  max-width: max-content;
+}
+
+.profile > h4,
+.tarif > h4 {
+  margin-bottom: 0;
+}
+
+@media (max-width: 834px) {
+    .settingsIcon {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .appHeader {
+        gap: var(--gap-xl);
+    }
+
+    .cardButton {
+        display: none;
+    }
+
+    .settingsMobileButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: var(--gap-3xs) var(--gap-2s);
+        background: var(--neutral-1);
+        border-radius: 100px;
+        border: 1px solid var(--neutral-5);
+        box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.04);
+    }
+}

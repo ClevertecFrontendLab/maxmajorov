@@ -1,0 +1,72 @@
+.cardModal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & > div {
+        padding: 0;
+    }
+}
+.titleWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--gap-m) var(--gap-s) var(--gap-s);
+    border-bottom: 1px solid var(--color-border-gray);
+    & :global(.ant-select-selection-item.ant-select-selection-item) {
+        text-align: start;
+    }
+}
+
+.buttonGroup {
+    max-height: 72px;
+    width: 100%;
+    padding: 0 var(--gap-s);
+    flex-direction: column;
+}
+
+.buttonAction {
+    margin-top: var(--gap-xs);
+}
+
+
+.cardWrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardBody {
+    padding: var(--gap-m) 0 var(--gap-s);
+    overflow: auto;
+    width: 100%;
+}
+
+.cardBody::-webkit-scrollbar {
+    width: 4px;
+    height: 80px;
+    background-color: inherit;
+}
+
+.cardBody::-webkit-scrollbar-thumb {
+    background-color: var(--color-scrole);
+}
+
+.cardBody::-webkit-scrollbar-track {
+    background-color: inherit;
+}
+
+
+
+@keyframes fade-in {
+    from {
+        height: 0;
+    }
+    to {
+        min-height: 200px;
+    }
+}
+
+
+

@@ -1,0 +1,11 @@
+.wrapper {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  bottom: 72px;
+}
+
+.alert {
+  margin: 0 auto;
+  z-index: 99;
+}

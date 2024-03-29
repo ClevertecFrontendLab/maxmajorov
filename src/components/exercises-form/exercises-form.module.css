@@ -1,0 +1,32 @@
+.wrapperBlock, .wrapperItem {
+    display: flex;
+    align-items: self-end;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: var(--gap-2xs);
+}
+
+.wrapperItem {
+    width: 195px;
+}
+
+.simpleInput, .simpleLabel {
+    width: 90px;
+}
+
+.inputNumber, .label {
+    width: 120px;
+}
+
+.simpleLabel, .label {
+    height: var(--gap-xl);
+    padding: var(--gap-3xs) var(--gap-xs);
+    background-color: var(--color-border-gray);
+    text-align: start;
+    font-size: var(--font-size-xs);
+}
+
+.input {
+    width: 100%;
+    margin: var(--gap-xl) 0 0 0;
+}

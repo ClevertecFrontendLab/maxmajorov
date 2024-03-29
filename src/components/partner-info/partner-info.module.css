@@ -1,0 +1,11 @@
+.partnerInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: var(--gap-xl);
+}
+
+.partnerAvatar {
+    display: flex;
+    align-items: center;
+}

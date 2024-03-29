@@ -1,0 +1,57 @@
+.metrics {
+    display: flex;
+}
+
+.indicators {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font: var(--font-xs);
+}
+
+.trainingInfo {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--primary-light)
+}
+
+.controls {
+    margin-top: var(--gap-xl);
+}
+
+.status {
+    &>span {
+        margin-left: var(--gap-xs);
+    }
+}
+
+@media (max-width: 460px) {
+    .partnerInfo {
+        flex-direction: column;
+    }
+
+    .metrics {
+        margin-top: var(--gap-s);
+    }
+
+    .indicators {
+        display: block;
+    }
+
+    .indicators > div:last-child {
+        margin-top: var(--gap-xs);;
+    }
+
+    .controls {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: var(--gap-m);
+        width: 100%;
+    }
+
+    .status {
+        margin-top: var(--gap-m);
+        text-align: center;
+    }
+}

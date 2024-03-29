@@ -1,0 +1,26 @@
+.partners {
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--gap-6xl);
+}
+
+.partnersList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-m);
+}
+
+.partnersList :global(.ant-list-items) {
+    margin-top: 0;
+}
+
+@media (max-width: 575px) {
+    .title {
+        width: 100%;
+        text-align: center;
+    }
+
+    :global(.ant-list-items) {
+        justify-content: center;
+    }
+}

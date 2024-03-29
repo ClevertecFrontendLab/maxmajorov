@@ -26,6 +26,7 @@ __diff_output__
 dist
 dist-ssr
 *.local
+.env
 
 # yarn
 .pnp.*

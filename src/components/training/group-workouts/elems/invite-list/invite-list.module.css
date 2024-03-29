@@ -1,0 +1,91 @@
+.inviteList {
+    display: flex;
+    flex-direction: column;
+    padding: var(--gap-xl);
+    margin-bottom: var(--gap-xl);
+    gap: var(--gap-m);
+    background-color: var(--color-background-gray-light);
+}
+
+
+.inviteCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--gap-m);
+    background-color: var(--neutral-1);
+    border-radius: var(--border-radius-xxl);
+    border-top-left-radius: 0;
+
+    &>div {
+        padding: 0;
+    }
+}
+
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font: var(--font-s);
+    color: var(--font-title-light);
+    width: 174px;
+}
+
+.userName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: var(--gap-s);
+}
+
+.greeting {
+    margin-top: var(--gap-xs);
+    color: var(--font-primary-light-9);
+}
+
+.detailsLink {
+    margin-top: 4px;
+    color: var(--primary-light);
+    cursor: pointer;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: var(--gap-m)
+}
+
+.collapseButton {
+    text-align: start;
+    font: var(--font-s);
+    color: var(--primary-light);
+}
+
+@media (max-width: 835px) {
+    .inviteCard {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .userInfo {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .userName {
+        margin-left: var(--gap-s);
+    }
+
+    .message {
+        margin-top: var(--gap-m);
+    }
+
+    .controls {
+        margin-top: var(--gap-s);
+        width: 100%;
+    }
+}

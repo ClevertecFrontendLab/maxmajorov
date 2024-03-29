@@ -1,0 +1,17 @@
+.form div:global(.ant-form-item) {
+  margin-bottom: 0;
+}
+
+.rate {
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+
+.submit:global(.ant-btn) {
+  max-width: max-content;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}

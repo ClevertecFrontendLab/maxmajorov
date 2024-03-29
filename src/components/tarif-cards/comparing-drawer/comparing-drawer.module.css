@@ -1,0 +1,172 @@
+.modalEmail {
+  color: var(--secondary-light);
+}
+
+.modalEmail span {
+  font-weight: 700;
+}
+
+.modalContentWrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+.modalIcon {
+  font-size: 80px;
+  margin: 0 auto;
+  color: var(--primary-light);
+}
+
+.activePro {
+  margin: 24px 0;
+  padding: 14px 0;
+  text-align: center;
+  background-color: rgba(240, 245, 255, 1);
+}
+
+.activePro h5:global(.ant-typography) {
+  margin-bottom: 0;
+}
+
+.form {
+  padding-top: var(--gap-s);
+}
+
+.form label:global(.ant-radio-wrapper) {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.form span:global(.ant-radio + *) {
+  padding: 0;
+  display: flex;
+  width: 100%;
+}
+
+.form label:global(.ant-radio-wrapper:after) {
+  display: none;
+}
+
+.form span:global(.ant-radio) {
+  margin-left: 48px;
+}
+
+.price {
+  display: inline;
+}
+
+.price:global(.ant-typography) {
+  margin-bottom: 0;
+}
+
+.prices {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-m);
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  max-width: 257px;
+  width: 100%;
+  flex: 1 0;
+  justify-content: space-between;
+}
+
+div:global(.ant-drawer-content-wrapper) {
+  max-width: 100%;
+}
+
+.priceTitle {
+  font-weight: 700;
+  margin-bottom: var(--gap-xl);
+}
+
+.compare div:global(.ant-drawer-header){
+  border: 0;
+  padding: 24px 32px 16px;
+}
+
+.compare div:global(.ant-drawer-body){
+  padding: 0 32px;
+}
+
+.compare button:global(.ant-btn) {
+  padding: var(--gap-l);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.btn:global(.ant-btn) {
+  padding: var(--gap-l);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:global(.ant-drawer-close) {
+  position: absolute;
+  right: 32px;
+}
+
+.btns {
+  padding-top: 24px;
+  display: flex;
+  gap: 14px;
+  justify-content: end;
+  margin-bottom: var(--gap-xl);
+}
+
+.traits {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-m);
+  padding-bottom: 50px;
+}
+
+.trait {
+  display: flex;
+  justify-content: end;
+}
+
+.trait svg {
+  font-size: 18px;
+}
+
+.traitTitle {
+  margin-right: auto;
+}
+
+.last {
+  margin-left: 52.5px;
+  margin-right: var(--gap-m);
+}
+
+.tarifName {
+  padding: 4px 13px;
+  font-size: 12px;
+  line-height: 15.6px;
+}
+
+.tarifName:first-child {
+  background-color: rgba(240, 240, 240, 1);
+}
+
+.tarifName:last-child {
+  background-color: rgba(240, 245, 255, 1);
+  color: rgba(29, 57, 196, 1);
+}
+
+div:global(.ant-drawer-title) {
+  font-size: 20px;
+}

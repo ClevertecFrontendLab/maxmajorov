@@ -1,0 +1,39 @@
+.resultContainer {
+    max-width: 368px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-xl);
+}
+
+.emailNoExist {
+    max-width: 400px;
+}
+
+.descriptionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font: var(--font-xl-tablet);
+    color: var(--font-title-light);
+}
+
+.description {
+    color: var(--secondary-light);
+    font: var(--font-s);
+    text-align: center;
+    line-height: 1.5;
+}
+
+@media (max-width: 490px) {
+    .loginWrapper {
+        max-width: 328px;
+        max-height: 612px;
+        padding: var(--gap-4xl) var(--gap-m);
+    }
+}
