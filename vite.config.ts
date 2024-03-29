@@ -5,7 +5,8 @@ import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import svgr from 'vite-plugin-svgr';
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
+    base: command === 'build' ? '/maxmajorov/' : '/',
     plugins: [react(), svgr()],
     css: {
         preprocessorOptions: {
@@ -39,4 +40,4 @@ export default defineConfig({
             '@theme': path.resolve(__dirname, 'src/theme'),
         },
     },
-});
+}));
